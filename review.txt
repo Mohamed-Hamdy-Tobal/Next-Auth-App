@@ -1,0 +1,15 @@
+1) (auth) => will be ignored if there pages or folders inside like
+    login
+        page.jsx
+
+that will be in route -> http://localhost:3000/login
+
+
+---------------------------------------------------------------------
+
+2) if i want to add components folder in the app, it will be a route ok
+to ignore this and treat it like only a components folder
+make it like -> _components
+
+---------------------------------------------------------------------
+
