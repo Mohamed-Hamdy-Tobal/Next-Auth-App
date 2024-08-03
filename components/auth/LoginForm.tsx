@@ -1,5 +1,6 @@
 import React from 'react'
 import CardWrapper from '@/components/auth/CardWrapper'
+import MainLoginForm from '@/components/auth/MainLoginForm'
 
 const LoginForm = () => {
     return (
@@ -9,7 +10,7 @@ const LoginForm = () => {
             backBtnHref={'/auth/register'}
             showSocial={true}
         >
-            Login Form!
+            <MainLoginForm/>
         </CardWrapper>
     )
 }
