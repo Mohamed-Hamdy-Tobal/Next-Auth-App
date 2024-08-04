@@ -18,7 +18,7 @@ import { Button } from '@/components/ui/button'
 import { FaEye, FaEyeSlash } from 'react-icons/fa'
 import FormError from '@/components/FormError'
 import FormSuccess from '@/components/FormSuccess'
-import { login, register } from '@/actions/login'
+import { register } from '@/actions/register'
 
 const MainRegisterForm = () => {
 

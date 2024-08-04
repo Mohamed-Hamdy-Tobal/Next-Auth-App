@@ -1,19 +1,18 @@
 'use server'
 
 import * as z from 'zod';
-import { LoginSchema } from '@/schemas';
+import { RegisterSchema } from '@/schemas';
 
-interface LoginResponse {
+interface RegisterResponse {
     error?: string;
     success?: string;
 }
 
-
-export const login = (values: z.infer<typeof LoginSchema>): Promise<LoginResponse> => {
+export const register = (values: z.infer<typeof RegisterSchema>): Promise<RegisterResponse> => {
     return new Promise((resolve) => {
         console.log(values);
 
-        const validateFields = LoginSchema.safeParse(values);
+        const validateFields = RegisterSchema.safeParse(values);
 
         if (!validateFields.success) {
             resolve({ error: "Invalid Data" });
