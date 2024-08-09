@@ -110,7 +110,7 @@ const MainRegisterForm = () => {
                                                 placeholder='******'
                                             />
                                             <div className="absolute w-[50px] h-full inset-y-0 right-0 pr-3 flex justify-center items-center text-sm leading-5">
-                                                <button type="button" onClick={togglePasswordVisibility} className="focus:outline-none">
+                                                <button disabled={isPending} type="button" onClick={togglePasswordVisibility} className="focus:outline-none">
                                                     {showPassword ? <FaEye /> : <FaEyeSlash />}
                                                 </button>
                                             </div>
